@@ -40,8 +40,14 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         Utility.lec.setFilterArray()
         tabelView.reloadData()
         
-        algo()
         
+        
+        DispatchQueue.main.async {
+            Utility.SCREEN_HEIGHT = self.view.frame.height
+            Utility.SCREEN_WIDTH = self.view.frame.height
+        }
+        
+
     }
     
     
@@ -78,41 +84,31 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let myview = Bundle.main.loadNibNamed("ViewDetail", owner: self, options: nil)?[0] as! ViewDetail
+        myview.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        self.view.addSubview(myview)
+        myview.animate()
+        myview.viewContainer.layer.cornerRadius = 25
+        myview.viewContainer.layer.shadowColor = UIColor.black.cgColor
+           myview.viewContainer.layer.cornerRadius = 10
+             myview.viewContainer.layer.shadowColor = UIColor.gray.cgColor
+             myview.viewContainer.layer.shadowOpacity = 0.5
+//        myview.viewContainer.layer.shadowOffset = 0.5
+             myview.viewContainer.layer.shadowRadius = 0
+        myview.viewContainer.colo
+             
+        
+        
+        
+        
+    }
     
     
     
-    
-      func algo()  {
-          
-          var a = 9;
-          var b = 2;
-
-          var i=1;
-          var c=0;
-
-          while(!(a == b)){
-              
-              
-              
-              if (a>b){
-                  a = a-b; // a=6
-              }else{
-                  c = a;
-                  a = b;
-                  b = c;
-              }
-              
-              print(i+1)
-              i+=1;
-              
-                print("i--value in while -- ", i);
-          }
-
-          print("i--value -- ", i);
-      }
-      
 }
-
-
+    
+   
 
 

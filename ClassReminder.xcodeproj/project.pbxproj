@@ -26,6 +26,8 @@
 		37D2A734250B38250077EC6E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2A732250B38250077EC6E /* UserNotifications.framework */; };
 		37D2A735250B38250077EC6E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2A733250B38250077EC6E /* UserNotificationsUI.framework */; };
 		37D2A737250B61D10077EC6E /* NotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D2A736250B61D10077EC6E /* NotificationAlert.swift */; };
+		37E53907250C931B004BE1A7 /* ViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E53906250C931B004BE1A7 /* ViewDetail.swift */; };
+		37E53909250C9346004BE1A7 /* ViewDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E53908250C9346004BE1A7 /* ViewDetail.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		37D2A732250B38250077EC6E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		37D2A733250B38250077EC6E /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		37D2A736250B61D10077EC6E /* NotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlert.swift; sourceTree = "<group>"; };
+		37E53906250C931B004BE1A7 /* ViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetail.swift; sourceTree = "<group>"; };
+		37E53908250C9346004BE1A7 /* ViewDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewDetail.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			children = (
 				37D2A72E250A5A610077EC6E /* CustomCellController.swift */,
 				37D2A72D250A5A610077EC6E /* CustomCellController.xib */,
+				37E53906250C931B004BE1A7 /* ViewDetail.swift */,
+				37E53908250C9346004BE1A7 /* ViewDetail.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C4C4D1250762A000BD7EF1 /* LaunchScreen.storyboard in Resources */,
+				37E53909250C9346004BE1A7 /* ViewDetail.xib in Resources */,
 				37C4C4CE250762A000BD7EF1 /* Preview Assets.xcassets in Resources */,
 				37D2A72F250A5A610077EC6E /* CustomCellController.xib in Resources */,
 				37C4C4F7250769CB00BD7EF1 /* ViewController.xib in Resources */,
@@ -346,6 +353,7 @@
 				37C4C4C92507629E00BD7EF1 /* ContentView.swift in Sources */,
 				37C4C4C42507629E00BD7EF1 /* SceneDelegate.swift in Sources */,
 				37D2A730250A5A610077EC6E /* CustomCellController.swift in Sources */,
+				37E53907250C931B004BE1A7 /* ViewDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

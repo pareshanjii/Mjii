@@ -11,7 +11,9 @@ import UIKit
 class Utility: NSObject {
     
     static var lec = LecturesBrain()
-    
+        
+    static var SCREEN_HEIGHT : CGFloat = 0.0
+    static var SCREEN_WIDTH : CGFloat = 0.0
  
     class func getCurrentCalander(formate : String) -> String {
         let date = Date()
