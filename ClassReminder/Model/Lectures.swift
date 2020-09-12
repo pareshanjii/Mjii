@@ -17,9 +17,9 @@ struct Lectures {
     //let dayWanted : String
     //let dateWanted : String
     let lectureOrPractical : String
+    var periodID : Int
     
-    
-    init(classTeacherName : String,subjectName : String,subjectNameAbbrivative : String,lectureOrPractical : String){
+    init(classTeacherName : String,subjectName : String,subjectNameAbbrivative : String,lectureOrPractical : String , id:Int){
         
         self.classTeacherName = classTeacherName
         self.subjectName = subjectName
@@ -27,6 +27,7 @@ struct Lectures {
         // self.dayWanted = dayWanted
         // self.dateWanted = dateWanted
         self.lectureOrPractical = lectureOrPractical
+        self.periodID = id
         
     }
    

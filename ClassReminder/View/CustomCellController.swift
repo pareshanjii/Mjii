@@ -26,9 +26,10 @@ class CustomCellController: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        update()
+        
         
 //       var dDay = Utility.getCurrentCalander(formate: "EEEE")
+        
         
     }
     
@@ -54,12 +55,12 @@ class CustomCellController: UITableViewCell {
     
     func updateUI(index:Int){
      let dDay = Utility.getCurrentCalander(formate: "EEEE")
-        if (index > 0){
+        if (index >= 0){
             viewSepetator.isHidden = true
         }
         
         if (index == 0){
-            lectureAbbrivative.backgroundColor = UIColor.init(named: "greenMast")
+            lectureAbbrivative.backgroundColor = UIColor.init(named: "pinkMast")
         }else {
             lectureAbbrivative.backgroundColor = UIColor.init(named: "pinkMast")
         }
@@ -88,6 +89,6 @@ class CustomCellController: UITableViewCell {
     
     
     
-    
+  
 }
 //
